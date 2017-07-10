@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<form action="/users/login" method="post">
+    <p>
+        <label for="">用户名：</label>
+        <input id="username" type="text" name="username">
+    </p>
+    <p>
+        <label for="">密码：</label>
+        <input id="password" type="text" name="password">
+    </p>
+    <p>
+        <input type="submit" value="登陆">
+
+
+    </p>
+</form>
+<script src="/javascripts/jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        $('#username').on('blur',function(){
+            if(this.value == ""){
+                $(this).css('border','1px solid red');
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+用户列表
+<hr/>
+<table>
+    <tr>
+        <td>用户编号</td>
+        <td>用户名</td>
+    </tr>
+    <%
+        for(var i=0;i<users.length;i++){
+    %>
+    <tr>
+        <td><%=users[i].user_id%></td>
+        <td><%=users[i].username%></td>
+    </tr>
+    <%
+    }
+    %>
+</table>
+</body>
+</html>
